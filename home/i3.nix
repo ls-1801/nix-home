@@ -58,6 +58,7 @@
       modifier = "Mod4";
       startup = [
          { command = "systemctl --user restart polybar"; always = true; notification = false; }
+         { command = "nitrogen --restore &"; always = true; notification = false; }
       ];
       keybindings = let modifier = config.xsession.windowManager.i3.config.modifier;
       in lib.mkOptionDefault {
