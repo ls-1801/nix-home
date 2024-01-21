@@ -16,6 +16,7 @@
     xdragon
     pistol
 
+    dtrx
 
     # Nix dev
     cachix

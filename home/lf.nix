@@ -33,10 +33,12 @@
       gh = "cd";
       gc = "cd ~/nix-home";
       gd = "cd ~/Downloads";
+      au = ''%${pkgs.dtrx}/bin/dtrx "$fx"'';
       "g/" = "/";
 
       ee = "editor-open";
       V = ''$${pkgs.bat}/bin/bat --paging=always --theme=gruvbox "$f"'';
+      V = ''%${pkgs.bat}/bin/bat --paging=always --theme=gruvbox "$f"'';
 
       # ...
     };
