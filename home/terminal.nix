@@ -94,6 +94,11 @@
 
     fish = {
       enable = true;
+      interactiveShellInit = ''
+        if [ $(tty) = "/dev/tty1" ] 
+          startx 
+        end
+      '';
       shellInit = ''
         set fish_greeting
       '';
