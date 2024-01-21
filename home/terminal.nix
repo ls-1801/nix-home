@@ -32,11 +32,15 @@
     nix-health
 
     fira-code-nerdfont
+    nitrogen
 
   ];
 
   fonts.fontconfig.enable = true;
-
+  home.sessionVariables = {
+    EDITOR = "${pkgs.neovim}/bin/nvim";
+    BROWSER = "firefox";
+  };
   home.shellAliases = {
     g = "git";
     lg = "lazygit";
@@ -68,7 +72,6 @@
       enableAliases = true;
     };
 
-    feh.enable = true;
     autorandr.enable = true;
     rofi.enable = true;
     carapace = {
