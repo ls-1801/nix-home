@@ -38,7 +38,7 @@
 
   fonts.fontconfig.enable = true;
   home.sessionVariables = {
-    EDITOR = "${pkgs.neovim}/bin/nvim";
+    EDITOR = "nvim";
     BROWSER = "firefox";
   };
   home.shellAliases = {
