@@ -31,6 +31,8 @@
       
       "g~" = "cd";
       gh = "cd";
+      gc = "cd ~/nix-home";
+      gd = "cd ~/Downloads";
       "g/" = "/";
 
       ee = "editor-open";
