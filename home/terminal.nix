@@ -15,7 +15,7 @@
     tree
     xdragon
     pistol
-
+    thunderbird
     dtrx
 
     # Nix dev
@@ -34,7 +34,7 @@
 
     fira-code-nerdfont
     nitrogen
-
+    bitwarden-cli
   ];
 
   fonts.fontconfig.enable = true;
