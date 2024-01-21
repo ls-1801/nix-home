@@ -4,13 +4,29 @@
   
   services.polybar = {
     enable = true;
-    script = "polybar top &";
+    package = pkgs.polybarFull;
+
+    script = ''
+      polybar top-main &
+      polybar top-right &
+    '';
+
     config = {
-      "bar/top" = {
+      "bar/top-right" = {
+        monitor = "\${env:MONITOR:HDMI-1}";
+        width = "100%";
+        height = "3%";
+        radius = 0;
+        modules-right = "i3";
+        modules-center = "date";
+      };
+
+      "bar/top-main" = {
         monitor = "\${env:MONITOR:DP-1}";
         width = "100%";
         height = "3%";
         radius = 0;
+        modules-right = "i3";
         modules-center = "date";
       };
 
@@ -20,6 +36,11 @@
         date = "%d.%m.%y";
         time = "%H:%M";
         label = "%time%  %date%";
+      };
+      "module/i3" = {
+        type = "internal/i3";
+        pin-workspaces = true;
+        strip-wsnumbers = true;
       };
     };
   };
