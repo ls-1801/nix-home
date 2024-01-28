@@ -32,6 +32,9 @@
 
     nix-health
 
+    rofi-power-menu
+    rbw
+    rofi-rbw
     fira-code-nerdfont
     nitrogen
     bitwarden-cli
@@ -74,7 +77,13 @@
     };
 
     autorandr.enable = true;
-    rofi.enable = true;
+    rofi = {
+      enable = true;
+      plugins = [
+        pkgs.rofi-power-menu
+        pkgs.rofi-rbw
+      ];
+    };
     carapace = {
       enable = true;
       enableFishIntegration = true;
