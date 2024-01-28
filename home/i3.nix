@@ -59,6 +59,21 @@
     enable = true;
     config = {
       modifier = "Mod4";
+      gaps = {
+        outer = 5;
+        inner = 5;
+        smartGaps = false;
+      };
+      window.border = 1;
+      floating.border = 1;
+      window.commands = [
+        {
+          command = "border pixel 1";
+          criteria = {
+            class = ".*";
+          };
+        }
+      ];
       startup = [
          { command = "systemctl --user restart polybar"; always = true; notification = false; }
          { command = "nitrogen --restore &"; always = true; notification = false; }
