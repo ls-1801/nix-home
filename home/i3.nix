@@ -84,7 +84,9 @@
         "${modifier}+Shift+Return" = "exec /usr/bin/firefox";
         "${modifier}+q" = "kill";
         "${modifier}+d" = "exec ${pkgs.rofi}/bin/rofi -show drun";
-
+        "${modifier}+Shift+e" = ''
+            exec \"${pkgs.rofi}/bin/rofi -show p -modi p:rofi-power-menu --symbols-font \\"Symbols Nerd Font Mono\\" -font \\"JetBrains Mono NF 16\\" -theme Paper -theme-str \\"window {width: 8em;} listview {lines: 6;}\\"\"
+          '';
         "${modifier}+less" = "move workspace to output left";
       };
     };
