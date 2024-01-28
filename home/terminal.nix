@@ -40,6 +40,11 @@
     fira-code-nerdfont
     nitrogen
     bitwarden-cli
+    # C++
+    # cmake
+    cmakeCurses
+    ccache
+    ninja
   ];
 
   fonts.fontconfig.enable = true;
