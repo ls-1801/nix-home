@@ -2,6 +2,9 @@
 
 {
   
+  services.picom = {
+    enable = true;
+  };
   services.polybar = {
     enable = true;
     package = pkgs.polybarFull;
