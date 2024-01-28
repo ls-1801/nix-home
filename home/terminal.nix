@@ -33,8 +33,10 @@
     nix-health
 
     rofi-power-menu
+
     rbw
     rofi-rbw
+    pavucontrol
     fira-code-nerdfont
     nitrogen
     bitwarden-cli
