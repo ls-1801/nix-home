@@ -58,6 +58,7 @@
     cat = "bat";
   };
 
+  services.copyq.enable = true;
   # Programs natively supported by home-manager.
   programs = {
     bat.enable = true;
