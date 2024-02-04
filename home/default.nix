@@ -5,6 +5,7 @@
     ./neovim
     ./starship.nix
     ./terminal.nix
+    ./autorandr.nix
     ./lf.nix
     ./i3.nix
     # Add more of your home-manager modules here.

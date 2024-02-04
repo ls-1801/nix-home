@@ -45,6 +45,8 @@
     cmakeCurses
     ccache
     ninja
+    #monitor
+    arandr
   ];
 
   fonts.fontconfig.enable = true;
