@@ -38,14 +38,17 @@
     rbw
     rofi-rbw
     pavucontrol
+
     fira-code-nerdfont
     nitrogen
     bitwarden-cli
+
     # C++
     # cmake
     cmakeCurses
     ccache
     ninja
+
     #monitor
     arandr
 
@@ -64,6 +67,7 @@
   };
 
   services.copyq.enable = true;
+
   # Programs natively supported by home-manager.
   programs = {
     bat.enable = true;
@@ -110,7 +114,7 @@
       enable = true;
       initExtra = ''
         # Make Nix and home-manager installed things available in PATH.
-        export PATH=/run/current-system/sw/bin/:/nix/var/nix/profiles/default/bin:$HOME/.nix-profile/bin:/etc/profiles/per-user/$USER/bin:$PATH
+        export PATH=/home/ls/.cargo/bin:/run/current-system/sw/bin/:/nix/var/nix/profiles/default/bin:$HOME/.nix-profile/bin:/etc/profiles/per-user/$USER/bin:$PATH
         ${pkgs.fish}/bin/fish
       '';
     };
