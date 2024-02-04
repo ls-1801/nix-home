@@ -47,6 +47,8 @@
     ninja
     #monitor
     arandr
+
+    zotero
   ];
 
   fonts.fontconfig.enable = true;
