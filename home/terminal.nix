@@ -16,6 +16,7 @@
     xdragon
     pistol
     thunderbird
+    tldr
     dtrx
 
     # Nix dev
