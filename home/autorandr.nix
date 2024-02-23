@@ -4,6 +4,11 @@
 {
   programs.autorandr = {
     enable = true;
+    hooks = {
+      postswitch = { 
+      "nitrogen" = "nitrogen --restore";
+      };
+    };
     profiles = { 
       "3monitor" = {
       fingerprint = {
