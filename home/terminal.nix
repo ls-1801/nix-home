@@ -53,6 +53,7 @@
     arandr
 
     zotero
+    droidcam
   ];
 
   fonts.fontconfig.enable = true;
