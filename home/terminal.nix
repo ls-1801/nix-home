@@ -57,6 +57,8 @@
 
     openconnect
     vpnc-scripts
+    #python
+    conda
   ];
 
   fonts.fontconfig.enable = true;
