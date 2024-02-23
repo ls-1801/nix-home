@@ -72,6 +72,7 @@
     cat = "bat";
   };
 
+  services.flameshot.enable = true;
   services.copyq.enable = true;
 
   # Programs natively supported by home-manager.

@@ -80,6 +80,7 @@
       ];
       keybindings = let modifier = config.xsession.windowManager.i3.config.modifier;
       in lib.mkOptionDefault {
+        "Print" = "exec ${pkgs.flameshot}/bin/flameshot gui";
         "${modifier}+Return" = "exec /usr/bin/kitty";
         "${modifier}+Shift+Return" = "exec /usr/bin/firefox";
         "${modifier}+q" = "kill";
