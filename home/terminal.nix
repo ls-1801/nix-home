@@ -54,6 +54,9 @@
 
     zotero
     droidcam
+
+    openconnect
+    vpnc-scripts
   ];
 
   fonts.fontconfig.enable = true;
@@ -115,6 +118,7 @@
       enable = true;
       initExtra = ''
         # Make Nix and home-manager installed things available in PATH.
+        export BW_SESSION=$(cat /home/ls/.bwsession)
         export PATH=/home/ls/.cargo/bin:/run/current-system/sw/bin/:/nix/var/nix/profiles/default/bin:$HOME/.nix-profile/bin:/etc/profiles/per-user/$USER/bin:$PATH
         ${pkgs.fish}/bin/fish
       '';
